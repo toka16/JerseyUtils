@@ -17,7 +17,7 @@ import javax.ws.rs.core.HttpHeaders;
 public class BasicAuthenticationDataExtractor implements AuthenticationDataExtractor {
 
     public static final String AUTHENTICATION_TYPE = "Basic";
-    
+
     @Override
     public boolean supports(ContainerRequestContext requestContext) {
         String authorizationHeader

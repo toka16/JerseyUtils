@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ge.ambro</groupId>
     <artifactId>JerseyUtils</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>v0.2</version>
     <packaging>jar</packaging>
     
     <properties>

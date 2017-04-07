@@ -6,8 +6,6 @@
 package ge.ambro.jerseyutils.security.impl.basic;
 
 import ge.ambro.jerseyutils.security.Authenticator;
-import ge.ambro.jerseyutils.security.impl.UsernamePrincipal;
-import ge.ambro.jerseyutils.security.impl.SimpleSecurityContext;
 import ge.ambro.jerseyutils.security.model.AuthenticationData;
 import java.util.Objects;
 import javax.ws.rs.container.ContainerRequestContext;

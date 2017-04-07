@@ -6,6 +6,7 @@
 package ge.ambro.jerseyutils.security;
 
 import javax.ws.rs.container.ContainerRequestContext;
+import org.glassfish.hk2.api.ServiceLocator;
 
 /**
  *
@@ -13,11 +14,17 @@ import javax.ws.rs.container.ContainerRequestContext;
  */
 public interface AuthenticatorManager {
 
+    void registerAuthenticator(Class<? extends Authenticator> auth);
+
     void registerAuthenticator(Authenticator auth);
 
     Authenticator getAuthenticatorFor(String type);
 
+    void registerExtractor(Class<? extends AuthenticationDataExtractor> extrctor);
+
     void registerExtractor(AuthenticationDataExtractor extrctor);
 
     AuthenticationDataExtractor getDataExtractorFor(ContainerRequestContext context);
+
+    void setLocator(ServiceLocator locator);
 }

@@ -27,7 +27,6 @@ public class AuthenticationFilter implements ContainerRequestFilter {
 
     @Override
     public void filter(ContainerRequestContext requestContext) throws IOException {
-        System.out.println("filter");
         AuthenticationDataExtractor extractor = manager.getDataExtractorFor(requestContext);
         if (extractor == null) {
             return;
